@@ -1,17 +1,21 @@
-//TIP 要<b>运行</b>代码，请按 <shortcut actionId="Run"/> 或
-// 点击装订区域中的 <icon src="AllIcons.Actions.Execute"/> 图标。
 public class Main {
     public static void main(String[] args) {
-        //TIP 当文本光标位于高亮显示的文本处时按 <shortcut actionId="ShowIntentionActions"/>
-        // 查看 IntelliJ IDEA 建议如何修正。
-      Person p1 = new Person();
-              p1.name="小明";
-              p1.age=22;
+        System.out.println("Hello world!");
+        Person p1=new Person("lihua",23,"boy");
+        Person p2=new Person("lihasdadsdasua",233,"boy");
+        double b2=p1.doubleNum(33.2,20.1);
+        System.out.println("b2");
+        System.out.println(b2);
+        System.out.println(p1.name);
+        System.out.println(Person.info);
+        System.out.println(Person.info);
+        Person.info ="杰哥你干嘛";
+        System.out.println("----------------");
+        System.out.println(Person.info);
+        System.out.println(Person.info);
+        System.out.println(Person.info);
+        Person.staticFunc();
 
-        System.out.println(p1.name+p1.age);
 
-        Person p2 = p1;
-        p2.name="小花";
-        System.out.println("p1.name"+p1.name);
     }
 }
